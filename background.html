@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #000;
+			margin: 10px;
+			float: left;
+			background-image: url("images/1.jpg");
+		}
+		.repeat-round{
+			background-repeat: round;
+		}
+		.repeat-space{
+			background-repeat: space;
+		}
+		.repeat-space-repeat{
+			background-repeat: space repeat;
+		}
+		.size-contain{
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.size-cover{
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.attachment-fixed{
+			 overflow: scroll;
+			 background-position: center;
+			 background-repeat: no-repeat;
+			 background-attachment: fixed;
+		 }
+		.attachment-local{
+			overflow: scroll;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: local;
+		}
+		.attachment-scroll{
+			overflow: scroll;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+		}
+		.origin-border{
+			background-origin: border-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+		.origin-padding{
+			background-origin: padding-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+		.origin-content{
+			background-origin: content-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+		.clip-border{
+			background-clip: border-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+		.clip-padding{
+			background-clip: padding-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+		.clip-content{
+			background-clip: content-box;
+			background-repeat: no-repeat;
+			padding: 10px;
+			border-width: 10px;
+		}
+	</style>
+</head>
+<body>
+<div class="box"></div>
+<div class="box repeat-round"></div>
+<div class="box repeat-space"></div>
+<div class="box repeat-space-repeat"></div>
+<div class="box size-contain"></div>
+<div class="box size-cover"></div>
+<div class="box attachment-fixed">
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+</div>
+<div class="box attachment-local">
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+</div>
+<div class="box attachment-scroll">
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+	a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+</div>
+<div class="box origin-border"></div>
+<div class="box origin-padding"></div>
+<div class="box origin-content"></div>
+<div class="box clip-border"></div>
+<div class="box clip-padding"></div>
+<div class="box clip-content"></div>
+</body>
+</html>

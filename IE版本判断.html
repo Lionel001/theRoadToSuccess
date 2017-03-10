@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+
+<script type="text/javascript">
+var browser = navigator.appName;
+var b_version = navigator.appVersion;
+var version = b_version.split(";");
+var trim_Version = version[1].replace(/[ ]/g,"");
+var ifIe11 = /(Trident)\/([\d.]+)/;//IE11要另外判断
+if(browser == "Microsoft Internet Explorer" && trim_Version=="MSIE6.0")
+{
+    alert("IE 6.0");
+}
+else if(browser == "Microsoft Internet Explorer" && trim_Version=="MSIE7.0")
+{
+    alert("IE 7.0");
+}
+else if(browser == "Microsoft Internet Explorer" && trim_Version=="MSIE8.0")
+{
+    alert("IE 8.0");
+}
+else if(browser == "Microsoft Internet Explorer" && trim_Version=="MSIE9.0")
+{
+    alert("IE 9.0");
+}else if(browser == "Microsoft Internet Explorer" && trim_Version=="MSIE10.0")
+{
+    alert("IE 10.0");
+}else if(ifIe11.test(b_version)){
+    alert("IE 11.0");
+}
+</script>
+<!--<script type="text/javascript">
+    window.GLOBAL = {  //浏览器版本信息
+        BROWSER : (function() {
+            var u = window.navigator.userAgent.toLocaleLowerCase(),
+                    msie = /(msie) ([\d.]+)/,
+                    chrome = /(chrome)\/([\d.]+)/,
+                    firefox = /(firefox)\/([\d.]+)/,
+                    safari = /(safari)\/([\d.]+)/,
+                    opera = /(opera)\/([\d.]+)/,
+                    ie11 = /(trident)\/([\d.]+)/,
+                    b = u.match(msie)||u.match(chrome)||u.match(firefox)||u.match(safari)||u.match(opera)||u.match(ie11);
+            alert(b[1]+','+ parseInt(b[2])) ;
+        })()
+    }
+</script>-->
+</body>
+</html>

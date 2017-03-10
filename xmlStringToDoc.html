@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="jquery-1.6.2.min.js"></script>
+</head>
+<body>
+
+<script>
+	$(function () {
+		var str = '<?xml version="1.0"  encoding="GBK" standalone="yes"?>'+
+				'<MSG>'+
+				'<HEAD>'+
+		'<RET_CODE>0</RET_CODE>'+
+		'<RET_MSG>处理成功!</RET_MSG>'+
+		'</HEAD>'+
+		'<BODY datasets="2">'+
+		'<DATASET ds_id="201" rows="1" cols="9">'+
+		'<ROW>'+
+		'<COL col_name="BZ" />'+
+		'<COL col_name="DDHM">100000000001966</COL>'+
+		'<COL col_name="YJHM">GD001017838SD</COL>'+
+		'<COL col_name="YJZT">已妥投</COL>'+
+		'<COL col_name="QSR_XM">胡俊国</COL>'+
+		'<COL col_name="QSSJ">20121228164600</COL>'+
+		'<COL col_name="QSFS">本人签收</COL>'+
+		'<COL col_name="WTTYY" />'+
+		'<COL col_name="PSQK">03</COL>'+
+		'</ROW>'+
+		'</DATASET>'+
+		'<DATASET ds_id="202" rows="3" cols="6">'+
+		'<ROW>'+
+		'<COL col_name="DDHM">100000000001966</COL>'+
+		'<COL col_name="YJHM">GD001017838SD</COL>'+
+		'<COL col_name="YJZT">已收寄</COL>'+
+		'<COL col_name="CLSJ">2012-12-28 16:45:50.0</COL>'+
+		'<COL col_name="CLJG">深圳市工业路中心营业部</COL>'+
+		'<COL col_name="BZ">邮件收寄</COL>'+
+		'</ROW>'+
+		'<ROW>'+
+		'<COL col_name="DDHM">100000000001966</COL>'+
+		'<COL col_name="YJHM">GD001017838SD</COL>'+
+		'<COL col_name="YJZT">邮件已接收</COL>'+
+		'<COL col_name="CLSJ">2012-12-28 16:46:44.0</COL>'+
+		'<COL col_name="CLJG">深圳市建设路中心营业部</COL>'+
+		'<COL col_name="BZ">邮件接收</COL>'+
+		'</ROW>'+
+		'<ROW>'+
+		'<COL col_name="DDHM">100000000001966</COL>'+
+		'<COL col_name="YJHM">GD001017838SD</COL>'+
+		'<COL col_name="YJZT">已妥投</COL>'+
+		'<COL col_name="CLSJ">2012-12-28 16:48:19.0</COL>'+
+		'<COL col_name="CLJG">深圳市建设路中心营业部</COL>'+
+		'<COL col_name="BZ">妥投邮件录入</COL>'+
+		'</ROW>'+
+		'</DATASET>'+
+		'</BODY>'+
+		'</MSG>';
+
+		var doc = loadXML(str);
+	});
+	function loadXML(xmlString){
+		var xmlDoc=null;
+		//判断浏览器的类型
+		//支持IE浏览器
+		if(window.ActiveXObject){   //window.DOMParser 判断是否是非ie浏览器
+			var xmlDomVersions = ['MSXML2.DOMDocument.6.0','MSXML2.DOMDocument.3.0','Microsoft.XMLDOM'];
+			for(var i=0;i<xmlDomVersions.length;i++){
+				try{
+					xmlDoc = new ActiveXObject(xmlDomVersions[i]);
+					xmlDoc.async = false;
+					xmlDoc.loadXML(xmlString); //loadXML方法载入xml字符串
+					break;
+				}catch(e){
+				}
+			}
+		}
+		//支持Mozilla浏览器
+		else if(window.DOMParser && document.implementation && document.implementation.createDocument){
+			try{
+				/* DOMParser 对象解析 XML 文本并返回一个 XML Document 对象。
+				 * 要使用 DOMParser，使用不带参数的构造函数来实例化它，然后调用其 parseFromString() 方法
+				 * parseFromString(text, contentType) 参数text:要解析的 XML 标记 参数contentType文本的内容类型
+				 * 可能是 "text/xml" 、"application/xml" 或 "application/xhtml+xml" 中的一个。注意，不支持 "text/html"。
+				 */
+				domParser = new  DOMParser();
+				xmlDoc = domParser.parseFromString(xmlString, 'text/xml');
+			}catch(e){
+			}
+		}
+		else{
+			return null;
+		}
+
+		return xmlDoc;
+	}
+</script>
+</body>
+</html>

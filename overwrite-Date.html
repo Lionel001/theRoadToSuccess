@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<script src="jquery.min.js"></script>
+</head>
+<body>
+
+<script>
+    var newDate = Date;
+    Date = function(o){
+	if (arguments.length === 1 && typeof o === 'string') {
+	    o = /MSIE\s*?(\d+)/i.test(navigator.userAgent) ? o.replace(/\D+/g, ',') : '"' + o + '"';
+	}
+	if (arguments.length > 1) {
+	    var t = [];
+	    for (var j = 0; j < arguments.length; j++) {
+		t.push(arguments[j]);
+	    }
+	    o = t.join(',');
+	}
+	return eval('new newDate(' + (o || '') + ')');
+    };
+
+
+</script>
+</body>
+</html>

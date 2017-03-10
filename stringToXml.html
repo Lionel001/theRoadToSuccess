@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="jquery-1.6.2.min.js"></script>
+	<script>
+		//将字符串转化成dom对象;string转换为xml
+		function stringToXml(xmlString) {
+			var xmlDoc;
+			if (typeof xmlString == "string") {
+				//FF
+				if (document.implementation.createDocument) {
+					var parser = new DOMParser();
+					xmlDoc = parser.parseFromString(xmlString, "text/xml");
+				} else if (window.ActiveXObject) {
+					xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+					xmlDoc.async = false;
+					xmlDoc.loadXML(xmlString);
+				}
+			}
+			else {
+				xmlDoc = xmlString;
+			}
+			return xmlDoc;
+		}
+		//xml转换为string
+		function xmlToString(xmlDoc) {
+			if (window.ActiveXObject) {
+				return xmlDoc.xml;  //IE
+			} else {
+				return (new XMLSerializer()).serializeToString(xmlDoc);  //FF
+			}
+		}
+		var str = "<taxML>"+
+				"<sbQysdsczzsndsb2014NsrjbxxVO>"+
+		"<nsrsbh>650102722318301</nsrsbh>"+
+		"<nsrmc>河北庆润汽车贸易有限公司</nsrmc>"+
+		"<skssqq>2016-01-01</skssqq>"+
+		"<skssqz>2016-12-31</skssqz>"+
+		"<fddbr>韩金霞</fddbr>"+
+		"<kjzgmc/>"+
+		"<sbrq1>2017-01-18</sbrq1>"+
+		"<tbrq>2017-01-18</tbrq>"+
+		"<hznsqy>3</hznsqy>"+
+		"<zczb>1.0000</zczb>"+
+		"<jwzzkgjmqy>Y</jwzzkgjmqy>"+
+		"<sshyDm>1511</sshyDm>"+
+		"<csgjfxzhjzhy>Y</csgjfxzhjzhy>"+
+		"<cyrs>1</cyrs>"+
+		"<czjwgljy>0</czjwgljy>"+
+		"<zcze>0.00</zcze>"+
+		"<ssgs>0</ssgs>"+
+		"<qykjzz>0</qykjzz>"+
+		"<xqykjzz>N</xqykjzz>"+
+		"<qykjzd>N</qykjzd>"+
+		"<sydwkjzz/>"+
+		"<mjfylzzkjzd>N</mjfylzzkjzd>"+
+		"<cjtjjzzkjzd/>"+
+		"<nmzyhzscwkjzd/>"+
+		"<kjzdqt>N</kjzdqt>"+
+		"<kjdacfd>1</kjdacfd>"+
+		"<kjhsrjmc>1</kjhsrjmc>"+
+		"<kjjzbb>Y</kjjzbb>"+
+		"<kjzchgjsffsbh>Y</kjzchgjsffsbh>"+
+		"<gdzczjff>12,</gdzczjff>"+
+		"<chcbjjff>3,</chcbjjff>"+
+		"<hzsshsff>Y</hzsshsff>"+
+		"<sdsjsff>1</sdsjsff>"+
+		"<yxbz>Y</yxbz>"+
+		"<qysdsndsbtbb>00000000000000000000000000000000000000000000</qysdsndsbtbb>"+
+		"<dljbrxm/>"+
+		"<dljbrzjhm/>"+
+		"<dlsbrq/>"+
+		"<slrxm/>"+
+		"<slrq/>"+
+		"<slswjgDm/>"+
+		"<sbsxDm1>11</sbsxDm1>"+
+		"</sbQysdsczzsndsb2014NsrjbxxVO>"+
+		"<qyzygdGrid>"+
+		"</qyzygdGrid>"+
+		"<dwtzGrid>"+
+		"</dwtzGrid>"+
+		"<djxh>10111310000016711401</djxh>"+
+		"<skssqq>2016-01-01</skssqq>"+
+		"<skssqz>2016-12-31</skssqz>"+
+		"</taxML>";
+
+		var newXml = stringToXml(str);
+		console.log($(newXml).find('qysdsndsbtbb').text());
+	</script>
+</head>
+<body>
+
+</body>
+</html>
