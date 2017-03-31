@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="../../jquery.min.js"></script>
+    <style>
+        input:disabled{
+            border: 1px solid #DDD;
+            background-color: #fff;
+            color:red;
+        }
+          input[disabled]{
+              border: 1px solid #DDD;
+              background-color: #fff;
+              color:red;
+          }
+    </style>
 </head>
 <body>
 <label>list IE10及以上支持</label>
@@ -33,5 +45,7 @@
 <label>week IE不支持</label><input type="week">
 <hr>
 <label>maxlength 所有IE版本支持</label><input type="text" maxlength="5">
+<hr>
+<input type="text" disabled="disabled" value="12133123">
 </body>
 </html>
