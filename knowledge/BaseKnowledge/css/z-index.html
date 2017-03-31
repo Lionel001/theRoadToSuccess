@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+    <style type="text/css">
+        .test-div {
+            border: 1px blue solid;
+            width: 300px;
+            min-height: 100px;
+            position: relative;
+            z-index: 0;
+            font-size: 18px;
+            font-family: microsoft yahe;
+            color: #fff;
+        }
+
+        .has-position-absolute {
+            border: 1px #999999 solid;
+            width: 100px;
+            height: 200px;
+            background-color: #FAFAFA;
+            position: absolute;
+            z-index: 99;
+            top: 20px;
+            left: 50px;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+<div id="no-style">
+    <div id="div1" class="test-div" style="background-color:blue;">
+        div1的z-index为1
+        <div id="test-position" class="has-position-absolute">
+            div3的z-index为99
+        </div>
+    </div>
+    <div id="div2" class="test-div" style="background-color:red;">
+        <span>
+            div2的z-index为2，但是现在绝对定位的div3明明z-index比它大，
+            却依旧在这个层之下。原因是z-index是相对同一父元素下叠加时的z轴顺序。
+            z-index具有继承性，用简单的数学逻辑表示就是：div1的z-index为1，则它
+            的子元素div3的z-index就应该是1.xx，如果绝对定位的元素还有子元素，
+            则z=index值实际上就应该是1.xx.xx。下面的div2的z-index值为2，所以在div3之上
+        </span>
+    </div>
+
+    <pre style="font-size:18px">
+浅说position定位及z-index使用
+
+使用前提
+
+z-index只能在position属性值为relative或absolute或fixed的元素上有效。
+
+基本原理
+
+z-index值可以控制定位元素在垂直于显示屏方向（Z 轴）上的堆叠顺序（stack order），值大的元素发生重叠时会在值小的元素上面。
+
+使用的相对性
+
+z-index值只决定同一父元素中的同级子元素的堆叠顺序。父元素的z-index值（如果有）为子元素定义了堆叠顺序（css版堆叠“拼爹”）。
+向上追溯找不到含有z-index值的父元素的情况下，则可以视为自由的z-index元素，它可以与父元素的同级兄弟定位元素或其他自由的定位元素来比较z-index的值，
+决定其堆叠顺序。同级元素的z-index值如果相同，则堆叠顺序由元素在文档中的先后位置决定，后出现的会在上面。
+
+所以如果当你发现一个z-index值较大的元素被值较小的元素遮挡了，请先检查它们之间的dom结点关系，多半是因为其父结点含有激活并设置了z-index值的position定位元素。
+
+也因为这个相对性，还会引发浏览器表现不一致出现兼容问题。原因是ie6、7下面position值为非static的元素在未设置z-index值的情况下都会被隐含添加z-index:0，
+而Firefox/Chrome等现代浏览器会遵循标准默认z-index:auto不会产生值。
+
+还有一点需要注意，负值的z-index也依照大小比较的原理，但一般来说负值的z-index会被透明的body覆盖导致点击等事件响应出现问题，请谨慎使用。
+</pre>
+</div>
+</body>
+</html>
