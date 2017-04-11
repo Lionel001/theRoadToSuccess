@@ -11,12 +11,12 @@ var obj = {
         /*setTimeout((function () {
          console.log(this.name);// => bbb
          }).bind(this),0);*/
-        /*(function(that){
-         setTimeout(function () {
-         console.log(that.name);// => bbb
-         },0);
-         })(this);*/
-        setTimeout(this.print.bind(this),0);// => bbb
+        (function(that){
+             setInterval(function () {
+                console.log(that.name);// => bbb
+             },1000);
+         })(this);
+        // setTimeout(this.print.bind(this),0);// => bbb
     },
     print: function() {
         console.log(this.name);
