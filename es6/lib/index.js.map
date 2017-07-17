@@ -1,0 +1,1 @@
+{"version":3,"sources":["../script/index.js"],"names":["a","console","log"],"mappings":";;AAAA;;;AAGA,IAAIA,IAAI,CAAR;AACAC,QAAQC,GAAR,CAAYF,CAAZ","file":"index.js","sourcesContent":["/**\r\n * Created by Lionel on 2017/7/6 22:03.\r\n */\r\nlet a = 1;\r\nconsole.log(a);"]}
