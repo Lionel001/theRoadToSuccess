@@ -26,7 +26,7 @@ var numberToLetters = function(num){
             -- num;
         }
         result.push(String.fromCharCode(t + 64));
-        num = ~~(num / 26);
+        num = ~~(num / 26);//两次按位取反,等于向下取整
     }
     return result.reverse().join('');
 };
