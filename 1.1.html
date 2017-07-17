@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+    <style>
+        <!--
+        .b0 { border: 0 }
+        .b1 { border: 1 solid rgb(0,0,0) }
+        .b2 { border-left: 0 ; border-right: 1 solid rgb(0,0,0); border-top: 1 solid rgb(0,0,0); border-bottom: 1 solid rgb(0,0,0) }
+        .b3 { border-left: 1 solid rgb(0,0,0); border-right: 1 solid rgb(0,0,0); border-top: 0; border-bottom: 1 solid rgb(0,0,0) }
+        .b4 { border-left:0; border-right: 1 solid rgb(0,0,0); border-top:0; border-bottom: 1 solid rgb(0,0,0)}
+        .b5 { border-left: 0; border-right: 1 solid rgb(0,0,0); border-top: 0; border-bottom: 0 }
+        .b6 { border-left: 0; border-right: 0; border-top: 0; border-bottom: 1 solid rgb(0,0,0) }
+        -->
+    </style>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="3" style="font-family: 宋体; font-size: 16; border: 0">
+    <tbody><tr>
+        <td bgcolor="#FEFEFE" width="1716" height="28" class="b0" align="left" valign="middle" colspan="20"><font face="宋体" size="-1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;增值税纳税申报表附列资料（一）</b></font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#FEFEFE" width="1716" height="18" class="b0" align="left" valign="middle" colspan="20"><font face="宋体" size="-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（本期销售情况明细）</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#FEFEFE" width="1517" height="20" class="b0" align="left" valign="middle" colspan="18"><font face="宋体" size="-2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;税款所属时间：&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;日至&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</font></td>
+        <td bgcolor="#FEFEFE" width="199" height="20" class="b0" align="right" valign="middle" colspan="2"><font face="宋体" size="-2">&nbsp;</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#FEFEFE" width="1517" height="21" class="b6" align="left" valign="middle" colspan="18"><font face="宋体" size="-2">纳税人名称：（公章）</font></td>
+        <td bgcolor="#FEFEFE" width="199" height="21" class="b6" align="right" valign="middle" colspan="2"><font face="宋体" size="-2">金额单位：元至角分</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#DDEAFE" width="319" height="23" class="b3" align="center" valign="middle" colspan="6" rowspan="3"><font face="宋体" size="-2">项目及栏次</font></td>
+        <td bgcolor="#DDEAFE" width="200" height="23" class="b4" align="center" valign="middle" colspan="2"><font face="宋体" size="-2">开具税控增值税专用发票</font></td>
+        <td bgcolor="#DDEAFE" width="205" height="23" class="b4" align="center" valign="middle" colspan="2"><font face="宋体" size="-2">开具其他发票</font></td>
+        <td bgcolor="#DDEAFE" width="201" height="23" class="b4" align="center" valign="middle" colspan="2"><font face="宋体" size="-2">未开具发票</font></td>
+        <td bgcolor="#DDEAFE" width="199" height="23" class="b4" align="center" valign="middle" colspan="2"><font face="宋体" size="-2">纳税检查调整</font></td>
+        <td bgcolor="#DDEAFE" width="297" height="23" class="b4" align="center" valign="middle" colspan="3"><font face="宋体" size="-2">合计</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="23" class="b4" align="center" valign="middle" rowspan="2"><font face="宋体" size="-2">服务、不动产和无形资产扣除项目本期实际扣除金额</font></td>
+        <td bgcolor="#DDEAFE" width="199" height="23" class="b4" align="center" valign="middle" colspan="2"><font face="宋体" size="-2">扣除后</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#DDEAFE" width="97" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销售额</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+        <td bgcolor="#DDEAFE" width="102" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销售额</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销售额</font></td>
+        <td bgcolor="#DDEAFE" width="104" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销售额</font></td>
+        <td bgcolor="#DDEAFE" width="102" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销售额</font></td>
+        <td bgcolor="#DDEAFE" width="104" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">价税合计</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">含税(免税)销售额</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="35" class="b4" align="center" valign="middle"><font face="宋体" size="-2">销项(应纳)税额</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#DDEAFE" width="97" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">1</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">2</font></td>
+        <td bgcolor="#DDEAFE" width="102" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">3</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">4</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">5</font></td>
+        <td bgcolor="#DDEAFE" width="104" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">6</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">7</font></td>
+        <td bgcolor="#DDEAFE" width="102" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">8</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">9=1+3+5+7</font></td>
+        <td bgcolor="#DDEAFE" width="104" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">10=2+4+6+8</font></td>
+        <td bgcolor="#DDEAFE" width="97" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">11=9+10</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">12</font></td>
+        <td bgcolor="#DDEAFE" width="96" height="47" class="b4" align="center" valign="middle"><font face="宋体" size="-2">13=11-12</font></td>
+        <td bgcolor="#DDEAFE" width="103" height="47" class="b4" align="left" valign="middle"><font face="宋体" size="-2">14=13÷(100%+税率或征收率)×税率或征收率</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="38" height="31" class="b3" align="center" valign="middle" rowspan="7"><font face="宋体" size="-2">一、一般计税方法计税</font></td>
+        <td bgcolor="#EFEFEF" width="54" height="31" class="b4" align="center" valign="middle" rowspan="5"><font face="宋体" size="-2">全部征税项目</font></td>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">17%税率的货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">1</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">17%税率的服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">2</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">13%税率</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">3</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">11%税率</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">4</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">6%税率</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">5</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="54" height="31" class="b4" align="center" valign="middle" rowspan="2"><font face="宋体" size="-2">其中：即征即退项目</font></td>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">即征即退货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">6</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">即征即退服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">7</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="38" height="31" class="b3" align="center" valign="middle" rowspan="11"><font face="宋体" size="-2">二、简易计税方法计税</font></td>
+        <td bgcolor="#EFEFEF" width="54" height="31" class="b4" align="center" valign="middle" rowspan="9"><font face="宋体" size="-2">全部征税项目</font></td>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">6%征收率</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">8</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">5%征收率的货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">9a</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">5%征收率的服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">9b</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">4%征收率</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">10</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">3%征收率的货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">11</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">3%征收率的服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">12</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="51" height="31" class="b6" align="left" valign="middle"><font face="宋体" size="-2">预征率</font></td>
+        <td bgcolor="#EFEFEF" width="50" height="31" class="b6" align="right" valign="middle"><font face="宋体" size="-2">&nbsp;</font></td>
+        <td bgcolor="#EFEFEF" width="102" height="31" class="b4" align="left" valign="middle"><font face="宋体" size="-2">%</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">13a</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="51" height="31" class="b6" align="left" valign="middle"><font face="宋体" size="-2">预征率</font></td>
+        <td bgcolor="#EFEFEF" width="50" height="31" class="b6" align="right" valign="middle"><font face="宋体" size="-2">&nbsp;</font></td>
+        <td bgcolor="#EFEFEF" width="102" height="31" class="b4" align="left" valign="middle"><font face="宋体" size="-2">%</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">13b</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="51" height="31" class="b6" align="left" valign="middle"><font face="宋体" size="-2">预征率</font></td>
+        <td bgcolor="#EFEFEF" width="50" height="31" class="b6" align="right" valign="middle"><font face="宋体" size="-2">&nbsp;</font></td>
+        <td bgcolor="#EFEFEF" width="102" height="31" class="b4" align="left" valign="middle"><font face="宋体" size="-2">%</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">13c</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="54" height="31" class="b4" align="center" valign="middle" rowspan="2"><font face="宋体" size="-2">其中：即征即退项目</font></td>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">即征即退货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">14</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="203" height="31" class="b4" align="left" valign="middle" colspan="3"><font face="宋体" size="-2">即征即退服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">15</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="38" height="31" class="b3" align="center" valign="middle" rowspan="2"><font face="宋体" size="-2">三、免抵退税</font></td>
+        <td bgcolor="#EFEFEF" width="257" height="31" class="b4" align="left" valign="middle" colspan="4"><font face="宋体" size="-2">货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">16</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="257" height="31" class="b4" align="left" valign="middle" colspan="4"><font face="宋体" size="-2">服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">17</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="38" height="31" class="b3" align="center" valign="middle" rowspan="2"><font face="宋体" size="-2">四、免税</font></td>
+        <td bgcolor="#EFEFEF" width="257" height="31" class="b4" align="left" valign="middle" colspan="4"><font face="宋体" size="-2">货物及加工修理修配劳务</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">18</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    <tr>
+        <td bgcolor="#EFEFEF" width="257" height="31" class="b4" align="left" valign="middle" colspan="4"><font face="宋体" size="-2">服务、不动产和无形资产</font></td>
+        <td bgcolor="#FEFEFE" width="24" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">19</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="102" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="104" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+        <td bgcolor="#FEFEFE" width="97" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="96" height="31" class="b4" align="right" valign="middle"><font face="宋体" size="-2">0.00</font></td>
+        <td bgcolor="#FEFEFE" width="103" height="31" class="b4" align="center" valign="middle"><font face="宋体" size="-2">——</font></td>
+    </tr>
+    </tbody></table>
+</body>
+</html>
