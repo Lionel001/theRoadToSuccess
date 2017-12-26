@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+</head>
+<body>
+<form action="/api/a.do" method="post" id="form" enctype="multipart/form-data">
+    <input type="file" id="file1" name="file1">
+    <input type="file" id="file2" name="file2">
+    <input type="text" id="name" name="name">
+    <input type="submit" value="提交">
+    <a id="submitBtn">提交</a>
+</form>
+<script src="jquery/jquery.min.js"></script>
+<script src="jquery/jquery.form.js"></script>
+<!--<script>
+    (function($) {
+        var $_ajax = $.ajax;
+        $.extend({
+            _ajax : $_ajax,
+            /**
+             * 重写ajax方法：增加遮罩配置及异常处理
+             *
+             * @param options
+             *            请参见jquery.ajax参数
+             * @param options.url
+             *            请求url
+             * @param options.type
+             *            请求方式:[GET\POST]
+             * @param options.data
+             *            发送到服务器的数据
+             * @param options.dataType
+             *            预期服务器返回的数据类型，默认为json
+             * @param options.success
+             *            请求成功时的回调函数（error=0的情况）
+             * @param options.failure
+             *            请求失败时的回调函数
+             * @param options.timeout
+             *            请求超时时间（毫秒）
+             * @param options.showMask
+             *            是否显示遮罩，默认为false，手动调用时需将其设置为true
+             * @param options.maskMassage
+             *            显示遮罩时显示的信息，默认为"数据加载中，请稍后..."
+             * @param el
+             *            遮罩对象（DOM id），可选，默认为document.body
+             */
+            ajax : function(options, el) {
+                options = $.extend({
+                    url : "",
+                    type : "POST",
+                    data : {},
+                    dataType : "json",
+                    success : $.noop,
+                    failure : $.noop,
+                    timeout : 1000000,
+                    async : false, // 默认改成同步
+                    showMask : false,
+                    headers: {},
+                    maskMassage : "数据加载中，请稍后..." // 等待提示信息
+                }, options);
+
+                if (!options.error) {
+                    options.error = $.noop;
+                }
+                options.contentType = 'multipart/form-data';
+                if (options.showMask) {
+                    mini.mask({
+                        el : el,
+                        html : options.maskMassage
+                    });
+                }
+                return $_ajax({
+                    url : options.url,
+                    type : options.type,
+                    dataType : options.dataType,
+                    contentType: options.contentType,
+                    data : options.data,
+                    timeout : options.timeout,
+                    cache : false,
+                    async : options.async,
+                    headers : options.headers,
+                    complete : function(req, st) {
+                        if(options.complete){
+                            options.complete.call(this, req, st);
+                        }
+                        if (options.showMask) {
+                            mini.unmask(el);
+                        }
+                        if (st == "success" && req.status == "200") {
+                            if (req.responseJSON) {// jsonp\json
+                                if (req.responseJSON.success == false) {
+                                    if (req.responseJSON.messageCode == "SESSION_TIME_OUT") {//session超时
+                                        //top.location.replace("/BsfwtWeb/apps/views/login/login.html");
+                                    } else {
+                                        options.success.call(this, req.responseJSON);
+//                                     alert(req.responseJSON.message, function() {
+//                                         options.failure.call(this, req.responseJSON);
+//                                     });
+                                    }
+                                } else {//成功
+                                    options.success.call(this, req.responseJSON);
+                                }
+                            } else if(req.responseXML){
+                                options.success.call(this, req.responseXML);
+                            } else {//其他
+                                var regx = /"success"[ ]?:[ ]?false/g;
+                                if (regx.test(req.responseText)) {
+                                    var obj;
+                                    try {
+                                        if (mini) {
+                                            obj = mini.decode(req.responseText);
+                                        } else {
+                                            obj = jQuery.parseJSON(req.responseText);
+                                        }
+                                    } catch (e) {
+                                        obj = req.responseText;
+                                    }
+                                    if(obj.messageCode == "SESSION_TIME_OUT"){//session超时
+                                        //top.location.replace("/BsfwtWeb/apps/views/login/login.html");
+                                    }else{
+                                        options.error.call(this, req, st);
+//                                     alert(obj.message, function() {
+//                                         options.failure.call(this, req.responseText);
+//                                     });
+                                    }
+                                    delete obj;
+                                } else {
+                                    if(options.dataType == "json") {//兼容低版本jquery
+                                        obj = jQuery.parseJSON(req.responseText);
+                                        options.success.call(this, obj);
+                                    }else if(options.dataType == "xml"){
+                                        obj = jQuery.parseXML(req.responseText);
+                                        options.success.call(this, obj);
+                                    }else{
+                                        options.success.call(this, req.responseText);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        });
+    })(jQuery)
+</script>-->
+<script>
+    var option = {
+        data:{
+            id:1
+        },
+        dataType:'json',
+        beforeSubmit: function (formData,form,options) {
+            console.log(formData);
+            console.log(form);
+            console.log(options);
+            options.contentType = 'multipart/form-data';
+        },
+        success: function () {
+            $('body').append('success');
+        },
+        error: function () {
+            alert('error');
+            $('body').append('error');
+        }
+    };
+    $('#form').ajaxForm(option);
+    $('#submitBtn').click(function () {
+        $('#form').ajaxSubmit(option);
+    });
+</script>
+</body>
+</html>

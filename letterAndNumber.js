@@ -31,5 +31,5 @@ var numberToLetters = function(num){
     return result.reverse().join('');
 };
 // console.log(lettersToNumber('BA'),numberToLetters(25));
-console.log(lettersToNumber('N'),numberToLetters(30));
+console.log(lettersToNumber('E'),numberToLetters(4));
 

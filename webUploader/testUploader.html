@@ -5,32 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Title</title>
-    <link  rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
 </head>
 <body>
-<!--弹出遮罩层-->
-<div class="zpzs_gray"></div>
-<!--上传框开始-->
-<div id="uploader">
-    <!--上传框头部-->
-    <div class="add_img_head">
-        <span></span>
-        <b class="closeBtn">关闭</b>
-    </div>
-    <!--缩略图容器-->
-    <div id="fileList"></div>
-    <!--选择图片按钮-->
-    <div class="add_img">
-        <div id="filePicker">选择文件</div>
-        <p>按住Ctrl可多选照片</p>
-
-        <p>单次上传最多12张(单张最大2M)</p>
-
-        <div class="uploadBtn">开始上传</div>
+<div id="uploader" class="uploader">
+    <div id="uploadList" class="upload-list"></div>
+    <div class="btns">
+        <a class="" id="pickerBtn">选择文件</a>
+        <button id="uploadBtn" class="btn btn-default">开始上传</button>
     </div>
 </div>
 <script src="../jquery/jquery.min.js"></script>
 <script src="fex-webuploader/dist/webuploader.js"></script>
+<script src="customUploader.js"></script>
 <!--上传框结束-->
 <script src="testUploader.js"></script>
 </body>

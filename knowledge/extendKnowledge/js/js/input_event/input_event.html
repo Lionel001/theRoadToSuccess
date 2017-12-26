@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Title</title>
+</head>
+<body>
+<input id="a">
+<div id="b"></div>
+<script src="../../../../../jquery/jquery.min.js"></script>
+<script>
+    /**
+     * IE8、9、10、11，chrome,360极速有效，
+     * */
+    var handle=(function(){
+        if(navigator.appVersion.indexOf("MSIE 8.0") !== -1){ //IE8
+            return function(e){
+                if(e.originalEvent.propertyName === 'value'){
+                    e.handleObj.handler.apply(this,arguments);
+                }
+            }
+        }
+    })();
+    var bindType=(function(){
+        return navigator.appVersion.indexOf("MSIE 8.0") === -1 ? 'input': 'propertychange';//IE8
+    })();
+    $.event.special['input']={
+        bindType:bindType,
+        setup:function(){
+            if(navigator.appVersion.indexOf("MSIE 9.0") !== -1){//IE9
+                var input=this;
+                $.event.add(this,'focus._input',function(){
+                    $.event.add(document,'selectionchange._input',function(){
+                        $.event.trigger('input','',input)
+                    });
+                });
+                $.event.add(this,'blur._input',function(){
+                    $.event.remove(document,'selectionchange._input');
+                });
+            }
+            return false;
+        },
+        handle:handle
+    };
+    function write(val) {
+        $('#b').html(val);
+    }
+    $('#a').on('input', function () {
+        write($(this).val());
+    });
+</script>
+</body>
+</html>
